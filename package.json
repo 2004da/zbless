@@ -1,0 +1,19 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "Express Hello World",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+      "start": "node index.js"
+  },
+  "dependencies": {
+      "express": "4.21.1",
+      "serverless-http": "3.2.0",
+      "http-proxy-middleware": "3.0.3",
+  },
+  "engines": {
+      "node": ">=16"
+  }
+}
