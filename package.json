@@ -1,7 +1,7 @@
 {
-  "name": "express",
-  "version": "1.0.0",
-  "description": "Express Hello World",
+  "name": "serverless",
+  "version": "1.0.1",
+  "description": "serverless ok",
   "main": "index.js",
   "license": "MIT",
   "private": false,
