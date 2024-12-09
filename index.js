@@ -1,4 +1,3 @@
-const serverless = require('serverless-http');
 const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
@@ -13,5 +12,3 @@ const proxyOptions = {
 
 // 使用反向代理中间件
 app.use('/', createProxyMiddleware(proxyOptions));
-
-module.exports.handler = serverless(app);
