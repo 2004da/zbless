@@ -2,6 +2,7 @@ const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 const targetUrl = process.env.TARGETURL || 'http://example.com';
+const port = process.env.PORT || 3000;
 
 // 反向代理配置
 const proxyOptions = {
@@ -16,3 +17,8 @@ app.get('/', (req, res) => {
 
 // 使用反向代理中间件
 app.use('/api', createProxyMiddleware(proxyOptions));
+
+// 监听app端口
+app.listen(port, () => {
+  console.log(`app listening on port ${port}`);
+});
