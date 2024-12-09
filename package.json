@@ -1,19 +1,19 @@
 {
-  "name": "serverless",
+  "name": "express app",
   "version": "1.0.1",
-  "description": "serverless ok",
+  "description": "express app",
   "main": "index.js",
   "license": "MIT",
   "private": false,
   "scripts": {
       "start": "node index.js"
   },
+   "packageManager": "npm@10.9.0",
   "dependencies": {
       "express": "4.21.1",
-      "serverless-http": "3.2.0",
       "http-proxy-middleware": "3.0.3"
   },
   "engines": {
-      "node": ">=14"
+      "node": ">=16"
   }
 }
